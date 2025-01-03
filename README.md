@@ -17,7 +17,7 @@ Bu proje, bir blog platformu oluşturmak için geliştirilmiş bir web uygulamas
 ## Proje Kurulumu
 
 1. **Gerekli Bağımlılıkları Yükleyin**:
-   Projenin bağımlılıklarını yüklemek için aşağıdaki komutu çalıştırın:
+   Projenin bağımlılıklarını yüklemek için şu komutu çalıştırın:
 pip install -r requirements.txt
 
 2. **Veritabanını Yapılandırın**:
@@ -26,7 +26,7 @@ Proje, MySQL veritabanı kullanmaktadır. Veritabanını doğru bir şekilde yap
 - Veritabanı şemalarını oluşturmak için gerekli SQL dosyasını çalıştırın.
 
 3. **Uygulamayı Başlatın**:
-Flask uygulamasını başlatmak için aşağıdaki komutu kullanabilirsiniz:
+Flask uygulamasını başlatmak için şu komutu kullanabilirsiniz:
 python blog.py
 
 Uygulama, local ağda çalışacak şekilde yapılandırılmıştır ve domain kullanılmamıştır.
