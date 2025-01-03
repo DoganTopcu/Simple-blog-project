@@ -16,8 +16,8 @@ Bu proje, bir blog platformu oluşturmak için geliştirilmiş bir web uygulamas
 
 ## Proje Kurulumu
 
-1. **Gerekli Bağımlılıkları Yükleyin**:
-   Projenin bağımlılıklarını yüklemek için şu komutu çalıştırın:
+1. **Gerekli Gereksinimleri Yükleyin**:
+   Projenin gereksinimlerini yüklemek için şu komutu çalıştırın:
 pip install -r requirements.txt
 
 2. **Veritabanını Yapılandırın**:
