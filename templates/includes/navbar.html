@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <!-- Logo ve Anasayfa Bağlantısı -->
+  <a class="navbar-brand" href="/">YB Blog</a>
+  
+  <!-- Menü açılabilir butonu (mobil uyumlu) -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Menü içerikleri (açıldığında görünecek) -->
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <!-- Hakkımızda sayfası linki -->
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">Hakkımızda</a>
+      </li>
+      
+      <!-- Makaleler sayfası linki -->
+      <li class="nav-item active">
+        <a class="nav-link" href="/articles">Makaleler</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+      <!-- Eğer kullanıcı giriş yapmışsa, Kontrol Paneli ve Çıkış Yap seçenekleri gösterilir -->
+      {% if session["logged_in"] %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/dashboard">Kontrol Paneli</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/logout">Çıkış Yap</a>
+        </li>
+      {% else %}
+        <!-- Eğer kullanıcı giriş yapmamışsa, Giriş Yap seçeneği gösterilir -->
+        <li class="nav-item active">
+          <a class="nav-link" href="/login">Giriş Yap</a>
+        </li>
+      {% endif %}
+      
+      <!-- Kayıt Olma linki -->
+      <li class="nav-item active">
+        <a class="nav-link" href="/register">Kayıt Ol</a>
+      </li>
+    </ul>
+  </div>
+</nav>

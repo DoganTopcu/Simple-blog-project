@@ -1,0 +1,15 @@
+{% extends "layout.html" %} <!-- Layout dosyasını kullanır -->
+
+{% block body %} <!-- Ana içerik burada yer alır -->
+<h3>Giriş Yap</h3> <!-- Sayfa başlığı -->
+
+<hr> <!-- Başlık ile içerik arasına çizgi ekler -->
+
+{% from "includes/formhelpers.html" import render_field %} <!-- Form alanlarını render etmek için yardımcı fonksiyon ekler -->
+
+<form method="post"> <!-- Form gönderim yöntemi post -->
+    {{ render_field(form.username) }} <!-- Kullanıcı adı alanını render eder -->
+    {{ render_field(form.password) }} <!-- Parola alanını render eder -->
+
+    <button type="submit" class="btn btn-primary">Giriş Yap</button> <!-- Giriş yap butonu -->
+{% endblock  %} <!-- İçerik bloğunun sonu -->
